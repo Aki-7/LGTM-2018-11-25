@@ -1,0 +1,1 @@
+docker run -v `pwd`/:/app/:ro -p 5000:5000 -it server_flask

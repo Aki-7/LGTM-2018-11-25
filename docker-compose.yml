@@ -1,0 +1,20 @@
+version: "3"
+services:
+  postgre:
+    build: ./DB/
+    image: kotlin-demo-postgres
+    ports:
+      - "5432:5432"
+    container_name: kotlin-demo-postgres-container
+  apiserver:
+    build: ./APIServer/
+    volumes:
+      - "./APIServer:/app/"
+    ports:
+      - "8080:8080"
+  webserver:
+    build: ./WebServer/
+    volumes: 
+      - "./Webserver:/app/"
+    ports:
+      - "5000:5000"

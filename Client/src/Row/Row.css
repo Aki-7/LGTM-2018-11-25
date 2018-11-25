@@ -1,0 +1,10 @@
+.cell1{
+    width: 50%;
+    display: inline-block;
+}
+
+.cell2{
+    font-size: 15px;
+    width: 50%;
+    display: inline-block;
+}
